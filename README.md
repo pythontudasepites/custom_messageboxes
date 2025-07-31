@@ -43,6 +43,12 @@ A `tkinter.messagebox` modulhoz hasonlóan a különböző típusú üzenetablak
 
 E függvényeknek a már említett `title`, `message`, `detail`, `default`, `parent`, `command` és `type` argumentumokon kívül megadhatók a `message_font`, `message_fg_color`, `message_bg_color`, `detail_font`, `detail_fg_color`, `detail_bg_color` és `button_captions` kulcsszavas argumentumok. Az új paraméterek közül az első hárommal meghatározható a fő üzenet betűtípusa, betűszíne és háttérszíne. A következő hárommal ugyanezen jellemzők állíthatók be a részletező szövegre vonatkozóan. A `button_captions` paraméter egy listát vagy tuple-t fogad, amelyben fel lehet sorolni az adott típusú ablakhoz tartozó nyomógombok feliratát. Az elemek sorrendje a gombok balról jobbra vett elhelyezési sorrendjével kell, hogy megegyezzen. Ha ez az argumentum nincs megadva, akkor az alapértelmezett feliratok láthatók. Ezeket kérdésfeltevő ablakok esetén egy modulkonstans tartalmazza az egyes kérdéstípusokhoz. A másik három ablakfajta esetén az alapértelmezett felirat az ‘OK’.
 
-A osztályok és függvények definícióit a 'custom_messagebox' nevű modul tartalmazza. A részletes kommentek segítik a működés megértését.
+A osztályok és függvények definícióit a **`custom_messagebox`** nevű modul tartalmazza. A részletes kommentek segítik a működés megértését.
 
-Teszteljük le az egyéni modulunk függvényeit. Először állítsunk elő tájékoztató, hibajelző és figyelmeztető üzenetablakokat. Ennek tesztsorai és a megjelenő ablakok képernyőképei láthatók alább:
+## Alkalmazási példák
+
+Az alábbi képernyőképeken egyéni megjelenésű tájékoztató, hibajelző és figyelmeztető, valamint a különböző kérdésfeltevő üzenetablakok láthatók. Ez ezeket előállító tesztkódok a *tests* könyvtárban találhatók.
+
+![demo_app1_screenshot.png](images%2Fdemo_app1_screenshot.png)
+
+![demo_app1_screenshot.png](images%2Fdemo_app1_screenshot.png)

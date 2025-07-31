@@ -37,7 +37,7 @@ Ezek mellett az alábbi kulcsszavas argumentumok használhatók:
 
 A működéshez Python 3.10+ szükséges.
 
-### Fejlesztési motiváció
+### Túl a meglévőn - A fejlesztés indokai
 
 A Python szabványos könyvtár `tkinter.messagebox` almoduljának függvényei segítségével felugró üzenetablakokat hozhatunk létre. Attól függően, hogy a felhasználó felé tartalmilag milyen jellegű üzenetet kívánunk közölni, négy fő ablaktípust jeleníthetünk meg: *tájékoztató*, *figyelmeztető*, *hibajelző* és *kérdésfeltevő*. Ezen ablakok szerkezete, felépítése sok hasonlóságot mutat. Amiben eltérnek az az üzenetfajtához illő ikongrafika, valamint a nyomógombok száma és felirata.
 

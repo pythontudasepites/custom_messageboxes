@@ -64,7 +64,7 @@ Ezért, ha alkalmazásunkban jobban olvasható, színesebb megjelenésű üzenet
 
 Az előző pontban azért is foglaltuk össze a `tkinter.messagebox` üzenetablakok és létrehozófüggvényeik jellemzőit és paraméterezését, mert a saját készítésű változatokban is ezeket  alkalmazzuk, de a paraméterkészletet kibővítjük úgy, hogy mind a fő szöveg, mind a részletező szöveg betűtípusát, -méretét, kinézetét (vastagság, dőlés, aláhúzás) és színét, valamint a szöveg háttérszínét is meg lehessen a függvényhíváskor határozni, és a `command` paraméter is használható legyen.
 
-Első lépésben a saját üzenetablak tartalmi elrendezését tervezzük meg. Ezt mutatja a következő ábra, amin látható, hogy a felső címsor alatti területet három zónára osztjuk: bal oldalon az ikongrafika, ettől jobbra a szövegeket tartalmazó terület. Ezek alatt pedig egy vízszintes sávban a nyomógombok helyezhetők el egymás után az ablak jobb széléhez igazítva.
+Első lépésben az egyéni üzenetablak tartalmi elrendezését tervezzük meg. Ezt mutatja a következő ábra, amin látható, hogy a felső címsor alatti területet három zónára osztjuk: bal oldalon az ikongrafika, ettől jobbra a szövegeket tartalmazó terület. Ezek alatt pedig egy vízszintes sávban a nyomógombok helyezhetők el egymás után az ablak jobb széléhez igazítva.
 
 ![msgbox_desing.jpg](https://github.com/pythontudasepites/custom_messageboxes/blob/main/images/msgbox_desing.jpg)
 
@@ -88,7 +88,7 @@ A osztályok és függvények definícióit a **`custom_messagebox`** nevű modu
 
 ## Alkalmazási példák
 
-Az alábbi képernyőképeken egyéni megjelenésű tájékoztató, hibajelző és figyelmeztető, valamint a különböző kérdésfeltevő üzenetablakok láthatók. Ez ezeket előállító tesztkódok a *tests* könyvtárban találhatók.
+Az alábbi képernyőképeken egyéni megjelenésű tájékoztató, hibajelző és figyelmeztető, valamint a különböző kérdésfeltevő üzenetablakok láthatók. Az ezeket előállító tesztkódok a *tests* könyvtárban találhatók.
 ### Tájékoztató, hibajelző és figyelmeztető üzenetablakok
 ![info_error_warning_msgboxes.jpg](https://github.com/pythontudasepites/custom_messageboxes/blob/main/images/info_error_warning_msgboxes.jpg)
 

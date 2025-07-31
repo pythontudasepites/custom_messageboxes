@@ -1,7 +1,6 @@
 # Egyéni igényre szabható üzenetablakok
 
-##
-A modul függvényei segítségével felugró üzenetablakokat hozhatunk létre. Attól függően, hogy a felhasználó felé tartalmilag
+## A modul függvényei segítségével felugró üzenetablakokat hozhatunk létre. Attól függően, hogy a felhasználó felé tartalmilag
 milyen üzenetet kívánunk közölni, négy fő ablaktípust jeleníthetünk meg: tájékoztató, figyelmeztető, hibajelző és kérdésfeltevő.
 
 Az üzenetablakok szerkezete, felépítése sok hasonlóságot mutat. Amiben eltérnek az az üzenetfajtához illő ikongrafika, valamint

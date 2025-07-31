@@ -49,6 +49,6 @@ A osztályok és függvények definícióit a **`custom_messagebox`** nevű modu
 
 Az alábbi képernyőképeken egyéni megjelenésű tájékoztató, hibajelző és figyelmeztető, valamint a különböző kérdésfeltevő üzenetablakok láthatók. Ez ezeket előállító tesztkódok a *tests* könyvtárban találhatók.
 
-![demo_app1_screenshot.png](images%2Fdemo_app1_screenshot.png)
+![info_error_warning_msgboxes.jpg](https://github.com/pythontudasepites/custom_messageboxes/blob/main/images/info_error_warning_msgboxes.jpg)
 
 ![demo_app1_screenshot.png](images%2Fdemo_app1_screenshot.png)

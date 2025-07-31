@@ -1,6 +1,6 @@
 # Egyéni igényre szabható üzenetablakok
 
-A `tkinter.messagebox` almodul függvényei segítségével felugró üzenetablakokat hozhatunk létre. Attól függően, hogy a felhasználó felé tartalmilag milyen jellegű üzenetet kívánunk közölni, négy fő ablaktípust jeleníthetünk meg: *tájékoztató*, *figyelmeztető*, *hibajelző* és *kérdésfeltevő*. Ezen ablakok szerkezete, felépítése sok hasonlóságot mutat. Amiben eltérnek az az üzenetfajtához illő ikongrafika, valamint a nyomógombok száma és felirata.
+A Python szabványos könyvtár `tkinter.messagebox` almoduljának függvényei segítségével felugró üzenetablakokat hozhatunk létre. Attól függően, hogy a felhasználó felé tartalmilag milyen jellegű üzenetet kívánunk közölni, négy fő ablaktípust jeleníthetünk meg: *tájékoztató*, *figyelmeztető*, *hibajelző* és *kérdésfeltevő*. Ezen ablakok szerkezete, felépítése sok hasonlóságot mutat. Amiben eltérnek az az üzenetfajtához illő ikongrafika, valamint a nyomógombok száma és felirata.
 
 A `showinfo()`, `showwarning()`, `showerror()` függvényekkel létrehozható tájékoztató, figyelmeztető és hibajelző ablakok mindegyike egyetlen, OK feliratú gombot tartalmaz, minthogy ezeknél a felhasználónak csak tudomásul kell venni az üzenetet.
 

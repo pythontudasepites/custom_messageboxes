@@ -45,7 +45,7 @@ A tájékoztató, figyelmeztető és hibajelző ablakokat létrehozó `showinfo(
 
 A kérdésfeltevő ablak esetén azonban legalább két gomb jelenik meg, mert ez az ablak választ vár a felhasználótól: a felkínált gombok szövege által adott alternatívák alapján döntést kell hozni, és ennek megfelelő gombot kell lenyomni. Ennek hatására az ablak bezárul és az ablakot megjelenítő függvény valamilyen értékkel visszatér. Az `askquestion()` a megnyomott gombot azonosító karakterláncot (szimbolikus nevet) adja vissza. A többiek, amelyek eldöntendő (igen/nem) jellegű kérdést tesznek fel, két gombot jelenítenek meg és a választól függően egy logikai értéket (`True`, `False`) adnak vissza. Az `askyesnocancel()` esetén, minthogy három opciót kínál, a logikai értékek mellett a `None` is lehet visszatérési érték, ha a MÉGSE (Cancel) a választás.
 
-A függvények paraméterei:
+#### A függvények paraméterei:
 
 Az ablak címét és a fő üzenet szövegét a `title` és `message` pozicionális argumentumokkal adhatjuk meg. Ezek mellett néhány kulcsszavas argumentum is használható:  
 

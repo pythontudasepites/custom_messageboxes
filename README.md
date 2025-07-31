@@ -25,7 +25,7 @@ Az elején azért is foglaltuk össze a `tkinter.messagebox` üzenetablakok és 
 
 Első lépésben a saját üzenetablak tartalmi elrendezését tervezzük meg. Ezt mutatja a következő ábra, amin látható, hogy a felső címsor alatti területet három zónára osztjuk: bal oldalon az ikongrafika, ettől jobbra a szövegeket tartalmazó terület. Ezek alatt pedig egy vízszintes sávban a nyomógombok helyezhetők el egymás után az ablak jobb széléhez igazítva.
 
-![demo_app1_screenshot.png](images%2Fdemo_app1_screenshot.png)
+[![demo_app1_screenshot.png](images%2Fdemo_app1_screenshot.png)](https://github.com/pythontudasepites/custom_messageboxes/blob/main/images/msgbox_desing.jpg)
 
 Ami a tervezett elrendezés megvalósítását illeti, maga az üzenetablak egy `Toplevel` példány lesz, mert ezzel lehet a gyökérablaktól független ablakot megjeleníteni. Az egyes zónákat/részterületeket egy-egy keret (Frame widget) különíti el. Nem feltétlenül szükséges, de célszerű ezeket a kereteket egy főkeretben elrendezni és a főkeretet elhelyezni a `Toplevel` ablakban, mert így az ablak széleitől vett térközök beállítása egyszerűsödik.
 

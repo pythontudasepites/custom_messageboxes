@@ -1,6 +1,6 @@
 # Egyéni igényre szabható üzenetablakok
 
-### A **`custom_messagebox`** modul ***`showinfo()`***, ***`showwarning()`***, ***`showerror()`***, ***`askyesno()`***, ***`askyesnocancel()`***, ***`askokcancel()`***, ***`askretrycancel()`***  és ***`askquestion()`*** függvényei segítségével egyéni igény szerinti kinézetű felugró üzenetablakokat hozhatunk létre. <br><br>Attól függően, hogy a felhasználó felé tartalmilag milyen üzenetet kívánunk közölni, négy fő ablaktípust jeleníthetünk meg: tájékoztató, figyelmeztető, hibajelző és kérdésfeltevő.
+## A **`custom_messagebox`** modul ***`showinfo()`***, ***`showwarning()`***, ***`showerror()`***, ***`askyesno()`***, ***`askyesnocancel()`***, ***`askokcancel()`***, ***`askretrycancel()`***  és ***`askquestion()`*** függvényei segítségével egyéni igény szerinti kinézetű felugró üzenetablakokat hozhatunk létre. <br><br>Attól függően, hogy a felhasználó felé tartalmilag milyen üzenetet kívánunk közölni, négy fő ablaktípust jeleníthetünk meg: tájékoztató, figyelmeztető, hibajelző és kérdésfeltevő.
 
 ### Az üzenetablakokat létrehozó függvények jellemzői és paraméterezése
 Az üzenetablakok szerkezete és kinézete hasonló. Az ablak felső részén a címsor, alul vízszintesen pedig egy vagy több nyomógomb látható. E kettő közötti terület bal felső részben  az üzenetfajtához illő ikongrafika, ettől jobbra az üzenetszöveget megjelenítő terület.

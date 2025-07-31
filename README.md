@@ -1,10 +1,11 @@
 # Egyéni igényre szabható üzenetablakok
 
-A `tkinter.messagebox` almodul függvényei segítségével felugró üzenetablakokat hozhatunk létre. Attól függően, hogy a felhasználó felé tartalmilag milyen jellegű üzenetet kívánunk közölni, négy fő ablaktípust jeleníthetünk meg: tájékoztató, figyelmeztető, hibajelző és kérdésfeltevő. Ezen ablakok szerkezete, felépítése sok hasonlóságot mutat. Amiben eltérnek az az üzenetfajtához illő ikongrafika, valamint a nyomógombok száma és felirata.
+A `tkinter.messagebox` almodul függvényei segítségével felugró üzenetablakokat hozhatunk létre. Attól függően, hogy a felhasználó felé tartalmilag milyen jellegű üzenetet kívánunk közölni, négy fő ablaktípust jeleníthetünk meg: *tájékoztató*, *figyelmeztető*, *hibajelző* és *kérdésfeltevő*. Ezen ablakok szerkezete, felépítése sok hasonlóságot mutat. Amiben eltérnek az az üzenetfajtához illő ikongrafika, valamint a nyomógombok száma és felirata.
 
 A `showinfo()`, `showwarning()`, `showerror()` függvényekkel létrehozható tájékoztató, figyelmeztető és hibajelző ablakok mindegyike egyetlen, OK feliratú gombot tartalmaz, minthogy ezeknél a felhasználónak csak tudomásul kell venni az üzenetet.
 
 A kérdésfeltevő ablak esetén azonban legalább két gomb jelenik meg. Ugyanis, ahogy a neve is utal rá, ez az ablak választ vár, vagyis a felhasználónak az üzenet elolvasása után a felkínált gombok szövege által adott alternatívák alapján döntést kell hozni, és ennek megfelelő gombot kell lenyomni. Ennek hatására az ablak bezárul és az ablakot megjelenítő függvény valamilyen értékkel visszatér. Az `askquestion()` a megnyomott gombot azonosító karakterláncot (szimbolikus nevet) adja vissza. A többiek, amelyek eldöntendő (igen/nem) jellegű kérdést tesznek fel, két gombot jelenítenek meg és a választól függően egy logikai értéket (`True`, `False`) adnak vissza. Az `askyesnocancel()` esetén, minthogy három opciót kínál, a logikai értékek mellett a `None` is lehet visszatérési érték, ha a MÉGSE (Cancel) a választás.
+
 A függvények paraméterezése hasonló: az ablak címét és a fő üzenet szövegét a `title` és `message` pozicionális argumentumokkal adhatjuk meg. Ezek mellett néhány kulcsszavas argumentum is használható:  
 
 - a `detail` argumentummal a főüzenetet kiegészítő, részletező vagy magyarázó szöveg adható meg, amely a fő üzenet alatt jelenik meg.

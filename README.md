@@ -3,47 +3,41 @@
 ## A **`custom_messagebox`** modul ***`showinfo()`***, ***`showwarning()`***, ***`showerror()`***, ***`askyesno()`***, ***`askyesnocancel()`***, ***`askokcancel()`***, ***`askretrycancel()`***  és ***`askquestion()`*** függvényei segítségével egyéni igény szerinti kinézetű felugró üzenetablakokat hozhatunk létre. <br><br>Attól függően, hogy a felhasználó felé tartalmilag milyen üzenetet kívánunk közölni, négy fő ablaktípust jeleníthetünk meg: tájékoztató, figyelmeztető, hibajelző és kérdésfeltevő.
 
 ### Az üzenetablakokat létrehozó függvények jellemzői és paraméterezése
-Az üzenetablakok szerkezete, felépítése sok hasonlóságot mutat. Amiben eltérnek az az üzenetfajtához illő ikongrafika, valamint
-a nyomógombok száma és felirata.
+Az üzenetablakok szerkezete, felépítése sok hasonlóságot mutat. Amiben eltérnek az az üzenetfajtához illő ikongrafika, valamint a nyomógombok száma és felirata.
 
-A **`showinfo()`**, **`showwarning()`** és **`showerror()`** függvényekkel létrehozható tájékoztató, figyelmeztető és hibajelző ablakok mindegyike
-egyetlen, OK feliratú gombot tartalmaz, minthogy ezeknél a felhasználónak csak tudomásul kell venni az üzenetet.
+A **`showinfo()`**, **`showwarning()`** és **`showerror()`** függvényekkel létrehozható tájékoztató, figyelmeztető és hibajelző ablakok mindegyike egyetlen, OK feliratú gombot tartalmaz, minthogy ezeknél a felhasználónak csak tudomásul kell venni az üzenetet.
 
-A kérdésfeltevő ablakok esetén azonban legalább két gomb jelenik meg. Ugyanis, ahogy a neve is utal rá, ez az ablak
-választ vár, vagyis a felhasználónak az üzenet elolvasása után a felkínált gombok felirata által adott alternatívák alapján
-döntést kell hozni, és ennek megfelelő gombot kell lenyomni. Ennek hatására az ablak bezárul és az ablakot megjelenítő függvény
-valamilyen értékkel visszatér. Az askquestion() a megnyomott gombot azonosító karakterláncot (szimbolikus nevet) adja vissza.
-A többiek, amelyek eldöntendő (igen/nem) jellegű kérdést tesznek fel, két gombot jelenítenek meg és a választól függően egy
-logikai értéket (True, False) adnak vissza. Kivétel az askyesnocancel(), minthogy ez három opciót kínál, a logikai értékek
-mellett a None is lehet visszatérési érték, ha a MÉGSE (Cancel) a választás.
+A kérdésfeltevő ablakok esetén legalább két gomb jelenik meg. Ugyanis, ahogy a neve is utal rá, ez az ablak választ vár, vagyis a felhasználónak az üzenet elolvasása után a felkínált gombok felirata által adott alternatívák alapján döntést kell hozni, és ennek megfelelő gombot kell lenyomni. Ennek hatására az ablak bezárul és az ablakot megjelenítő függvény valamilyen értékkel visszatér. Az **`askquestion()`** a megnyomott gombot azonosító karakterláncot (szimbolikus nevet) adja vissza. A többiek, amelyek eldöntendő (igen/nem) jellegű kérdést tesznek fel, két gombot jelenítenek meg és a választól függően egy logikai értéket (`True`, `False`) adnak vissza. Kivétel az **`askyesnocancel()`**, minthogy ez három opciót kínál, a logikai értékek mellett a `None` is lehet visszatérési érték, ha a MÉGSE (Cancel) a választás.
 
-A függvények paraméterezése hasonló módon történik: az ablak címét és a fő üzenet szövegét a title és message pozicionális
-argumentumokkal adhatjuk meg. Ezek mellett néhány kulcsszavas argumentum is használható:
-  - detail: a fő üzenetet kiegészítő, részletező vagy magyarázó szöveg, amely a fő üzenet alatt jelenik meg.
-  - default: egy megjelenített nyomógomb szimbólikus nevét kell megadni. Az ablak megjelenésekor ez a gomb kap fókuszt,
+A függvények paraméterezése hasonló módon történik: az ablak címét és a fő üzenet szövegét a title és message pozicionális argumentumokkal adhatjuk meg. 
+Ezek mellett néhány kulcsszavas argumentum is használható:
+  - `detail`: a fő üzenetet kiegészítő, részletező vagy magyarázó szöveg, amely a fő üzenet alatt jelenik meg.
+  - `default`: egy megjelenített nyomógomb szimbólikus nevét kell megadni. Az ablak megjelenésekor ez a gomb kap fókuszt,
     és az Enter lenyomására is aktiválódik. Ha nincs megadva, alapértelmezés szerint a bal szélső gomb lesz fókuszban.
     Az érvényes szimbólikus nevek: 'ok', 'yes', 'no', 'cancel', 'retry', 'abort', 'ignore'.
-  - parent: azt az ablakobjektumot adhatjuk meg, amely felett az üzenetablak megjelenik.
-  - command: egy függvényt rendelhetünk hozzá, amely az ablak bezárásakor kerül meghívásra. Ez a függvény a lenyomott gomb
+  - `parent`: azt az ablakobjektumot adhatjuk meg, amely felett az üzenetablak megjelenik.
+  - `command`: egy függvényt rendelhetünk hozzá, amely az ablak bezárásakor kerül meghívásra. Ez a függvény a lenyomott gomb
     szimbolikus nevét kapja argumentumként.
-  - type: ezzel lehet beállítani az ablak típusát, ami meghatározza a megjelenő nyomógombok számát és feliratát.
+  - `type`: ezzel lehet beállítani az ablak típusát, ami meghatározza a megjelenő nyomógombok számát és feliratát.
     A megadható értékek: "ok", "okcancel", "yesno", "yesnocancel", "retrycancel", "abortretryignore".
     A type konfigurációs opció valójában csak a kérdésfeltevő ablakoknál érdekes, mert a többinél egyetlen OK gomb van.
     Továbbá, minthogy az askokcancel(), askretrycancel(), askyesno() és askyesnocancel() függvényeknél egyértelmű, hogy
     hány és milyen feliratú gomb fog megjelenni, ezért a type argumentum beállításának csak az askquestion() függvénynél
     van értelme. Ennél az alapértelmezett érték a "yesno".
-  - message_font: a fő üzenet betűtípusa.
-  - message_fg_color: a fő üzenet betűszíne.
-  - message_bg_color: a fő üzenet háttérszíne.
-  - detail_font: a részletező üzenetszöveg betűtípusa.
-  - detail_fg_color: a részletező üzenetszöveg betűszíne.
-  - detail_bg_color: a részletező üzenetszöveg háttérszíne.
-  - button_captions: egy listát vagy tuple-t fogad, amelyben fel lehet sorolni az adott típusú ablakhoz tartozó
+  - `message_font`: a fő üzenet betűtípusa.
+  - `message_fg_color`: a fő üzenet betűszíne.
+  - `message_bg_color`: a fő üzenet háttérszíne.
+  - `detail_font`: a részletező üzenetszöveg betűtípusa.
+  - `detail_fg_color`: a részletező üzenetszöveg betűszíne.
+  - `detail_bg_color`: a részletező üzenetszöveg háttérszíne.
+  - `button_captions`: egy listát vagy tuple-t fogad, amelyben fel lehet sorolni az adott típusú ablakhoz tartozó
     nyomógombok feliratát. Az elemek sorrendje a gombok balról jobbra vett elhelyezési sorrendjével kell, hogy megegyezzen.
     Ha ez az argumentum nincs megadva, akkor az alapértelmezett feliratok láthatók. Ezeket kérdésfeltevő ablakok esetén
     egy modulkonstans tartalmazza az egyes kérdéstípusokhoz. A másik három ablakfajta esetén az alapértelmezett felirat az 'OK'.
 
 A működéshez Python 3.10+ szükséges.
+
+### Motiváció
 
 A Python szabványos könyvtár `tkinter.messagebox` almoduljának függvényei segítségével felugró üzenetablakokat hozhatunk létre. Attól függően, hogy a felhasználó felé tartalmilag milyen jellegű üzenetet kívánunk közölni, négy fő ablaktípust jeleníthetünk meg: *tájékoztató*, *figyelmeztető*, *hibajelző* és *kérdésfeltevő*. Ezen ablakok szerkezete, felépítése sok hasonlóságot mutat. Amiben eltérnek az az üzenetfajtához illő ikongrafika, valamint a nyomógombok száma és felirata.
 

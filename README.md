@@ -19,9 +19,11 @@ A `tkinter.messagebox` üzenetablakai használhatók, de testreszabhatóságuk k
 
 Ezért, ha alkalmazásunkban jobban olvasható, színesebb üzenetablakokra van szükség, érdemes egy olyan saját modult készíteni, amely hasonló funkcionalitású függvényeket kínál, de olyan üzenetablakokat jelenít meg, amelyek mentesek az említett korlátoktól.
 
+## Tervezési és megvalósítási alapelvek
+
 Az elején azért is foglaltuk össze a `tkinter.messagebox` üzenetablakok és létrehozófüggvényeik jellemzőit és paraméterezését, mert a saját készítésű változatokban is ezeket  alkalmazzuk, de a paraméterkészletet kibővítjük úgy, hogy mind a fő szöveg, mind a részletező szöveg betűtípusát, -méretét, kinézetét (vastagság, dőlés, aláhúzás) és színét, valamint a szöveg háttérszínét is meg lehessen a függvényhíváskor határozni, és a `command` paraméter is használható legyen.
 
-Első lépésben saját üzenetablak tartalmi elrendezését tervezzük meg. Ezt mutatja a következő ábra, amin látható, hogy a felső címsor alatti területet három zónára osztjuk: bal oldalon az ikongrafika, ettől jobbra a szövegeket tartalmazó terület. Ezek alatt pedig egy vízszintes sávban a nyomógombok helyezhetők el egymás után az ablak jobb széléhez igazítva.
+Első lépésben a saját üzenetablak tartalmi elrendezését tervezzük meg. Ezt mutatja a következő ábra, amin látható, hogy a felső címsor alatti területet három zónára osztjuk: bal oldalon az ikongrafika, ettől jobbra a szövegeket tartalmazó terület. Ezek alatt pedig egy vízszintes sávban a nyomógombok helyezhetők el egymás után az ablak jobb széléhez igazítva.
 
 Ami a tervezett elrendezés megvalósítását illeti, maga az üzenetablak egy `Toplevel` példány lesz, mert ezzel lehet a gyökérablaktól független ablakot megjeleníteni. Az egyes zónákat/részterületeket egy-egy keret (Frame widget) különíti el. Nem feltétlenül szükséges, de célszerű ezeket a kereteket egy főkeretben elrendezni és a főkeretet elhelyezni a `Toplevel` ablakban, mert így az ablak széleitől vett térközök beállítása egyszerűsödik.
 

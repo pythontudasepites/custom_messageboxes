@@ -2,6 +2,7 @@
 
 ## A **`custom_messagebox`** modul ***`showinfo()`***, ***`showwarning()`***, ***`showerror()`***, ***`askyesno()`***, ***`askyesnocancel()`***, ***`askokcancel()`***, ***`askretrycancel()`***  és ***`askquestion()`*** függvényei segítségével egyéni igény szerinti kinézetű felugró üzenetablakokat hozhatunk létre. <br><br>Attól függően, hogy a felhasználó felé tartalmilag milyen üzenetet kívánunk közölni, négy fő ablaktípust jeleníthetünk meg: tájékoztató, figyelmeztető, hibajelző és kérdésfeltevő.
 
+### Az üzenetablakokat létrehozó függvények jellemzői és paraméterezése
 Az üzenetablakok szerkezete, felépítése sok hasonlóságot mutat. Amiben eltérnek az az üzenetfajtához illő ikongrafika, valamint
 a nyomógombok száma és felirata.
 

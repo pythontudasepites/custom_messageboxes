@@ -6,7 +6,7 @@
 Az üzenetablakok szerkezete, felépítése sok hasonlóságot mutat. Amiben eltérnek az az üzenetfajtához illő ikongrafika, valamint
 a nyomógombok száma és felirata.
 
-A showinfo(), showwarning(), showerror() függvényekkel létrehozható tájékoztató, figyelmeztető és hibajelző ablakok mindegyike
+A **`showinfo()`**, **`showwarning()`** és **`showerror()`** függvényekkel létrehozható tájékoztató, figyelmeztető és hibajelző ablakok mindegyike
 egyetlen, OK feliratú gombot tartalmaz, minthogy ezeknél a felhasználónak csak tudomásul kell venni az üzenetet.
 
 A kérdésfeltevő ablakok esetén azonban legalább két gomb jelenik meg. Ugyanis, ahogy a neve is utal rá, ez az ablak

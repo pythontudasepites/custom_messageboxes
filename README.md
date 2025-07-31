@@ -10,7 +10,7 @@ A **`showinfo()`**, **`showwarning()`** és **`showerror()`** függvényekkel l�
 A kérdésfeltevő ablakok esetén legalább két gomb jelenik meg. Ugyanis, ahogy a neve is utal rá, ez az ablak választ vár, vagyis a felhasználónak az üzenet elolvasása után a felkínált gombok felirata által adott alternatívák alapján döntést kell hozni, és ennek megfelelő gombot kell lenyomni. Ennek hatására az ablak bezárul és az ablakot megjelenítő függvény valamilyen értékkel visszatér. Az **`askquestion()`** a megnyomott gombot azonosító karakterláncot (szimbolikus nevet) adja vissza. Az **`askyesno()`**,  **`askokcancel()`** és **`askretrycancel()`** eldöntendő (igen/nem) jellegű kérdést tesznek fel, ezért két gombot jelenítenek meg és a választól függően egy logikai értéket (`True`, `False`) adnak vissza. Az **`askyesnocancel()`**, minthogy ez három opciót kínál, a logikai értékek mellett a `None` is lehet visszatérési érték, ha a MÉGSE (Cancel) a választás.
 
 A függvények paraméterezése hasonló módon történik: az ablak címét és a fő üzenet szövegét a `title` és `message` pozicionális argumentumokkal adhatjuk meg. 
-Ezek mellett néhány kulcsszavas argumentum is használható:
+Ezek mellett az alábbi kulcsszavas argumentumok használhatók:
   - `detail`: a fő üzenetet kiegészítő, részletező vagy magyarázó szöveg, amely a fő üzenet alatt jelenik meg.
   - `default`: egy megjelenített nyomógomb szimbólikus nevét kell megadni. Az ablak megjelenésekor ez a gomb kap fókuszt,
     és az Enter lenyomására is aktiválódik. Ha nincs megadva, alapértelmezés szerint a bal szélső gomb lesz fókuszban.

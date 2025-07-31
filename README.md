@@ -51,4 +51,7 @@ Az alábbi képernyőképeken egyéni megjelenésű tájékoztató, hibajelző �
 
 ![info_error_warning_msgboxes.jpg](https://github.com/pythontudasepites/custom_messageboxes/blob/main/images/info_error_warning_msgboxes.jpg)
 
-![demo_app1_screenshot.png](images%2Fdemo_app1_screenshot.png)
+
+![question_msgboxes.jpg](https://github.com/pythontudasepites/custom_messageboxes/blob/main/images/question_msgboxes.jpg)
+
+

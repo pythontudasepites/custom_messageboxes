@@ -78,7 +78,7 @@ Az egyes üzenetfajákhoz tartozó ablakokat a `MessageBox` osztály alosztálya
 
 Az üzenetablakok felugrását hangjelzés kíséri, amit a `MessageBox` osztály `_make_sound()` metódusa állít elő.
 
-Az üzenetablakpéldányokat a `show()` metódus meghívásával lehet megjeleníteni. E metódus visszatérési értéke a a választott nyomógomb szimbólikus neve.
+Az üzenetablakpéldányokat a `show()` metódus meghívásával lehet megjeleníteni. E metódus visszatérési értéke a választott nyomógomb szimbólikus neve.
 
 A `tkinter.messagebox` modulhoz hasonlóan a különböző típusú üzenetablakok létrehozására nem az előbb felsorolt osztályok közvetlen példányosítását kínáljuk, hanem erre szolgáló függvényeket. Tehát a saját egyéni modulunkban is definiáljuk a **`showinfo()`**, **`showwarning()`**, **`showerror()`**, **`askquestion()`**, **`askokcancel()`**, **`askretrycancel()`**, **`askyesno()`** és **`askyesnocancel()`** függvényeket. És ezek neveit egy listában felsorolva a modul `__all__` attribútumához rendeljük, jelezve, hogy ezek a nevek vannak nyilvános használatra szánva.
 

@@ -12,9 +12,9 @@ A kérdésfeltevő ablakok esetén legalább két gomb jelenik meg. Ugyanis, aho
 A függvények paraméterezése hasonló módon történik: az ablak címét és a fő üzenet szövegét a `title` és `message` pozicionális argumentumokkal adhatjuk meg. 
 Ezek mellett az alábbi kulcsszavas argumentumok használhatók:
   - `detail`: a fő üzenetet kiegészítő, részletező vagy magyarázó szöveg, amely a fő üzenet alatt jelenik meg.
-  - `default`: egy megjelenített nyomógomb szimbólikus nevét kell megadni. Az ablak megjelenésekor ez a gomb kap fókuszt,
+  - `default`: egy megjelenített nyomógomb szimbolikus nevét kell megadni. Az ablak megjelenésekor ez a gomb kap fókuszt,
     és az Enter lenyomására is aktiválódik. Ha nincs megadva, alapértelmezés szerint a bal szélső gomb lesz fókuszban.
-    Az érvényes szimbólikus nevek: 'ok', 'yes', 'no', 'cancel', 'retry', 'abort', 'ignore'.
+    Az érvényes szimbolikus nevek: 'ok', 'yes', 'no', 'cancel', 'retry', 'abort', 'ignore'.
   - `parent`: azt az ablakobjektumot adhatjuk meg, amely felett az üzenetablak megjelenik.
   - `command`: egy függvényt rendelhetünk hozzá, amely az ablak bezárásakor kerül meghívásra. Ez a függvény a lenyomott gomb
     szimbolikus nevét kapja argumentumként.
@@ -50,7 +50,7 @@ A kérdésfeltevő ablak esetén azonban legalább két gomb jelenik meg, mert e
 Az ablak címét és a fő üzenet szövegét a `title` és `message` pozicionális argumentumokkal adhatjuk meg. Ezek mellett néhány kulcsszavas argumentum is használható:  
 
 - a `detail` argumentummal a főüzenetet kiegészítő, részletező vagy magyarázó szöveg adható meg, amely a fő üzenet alatt jelenik meg.
-- a `default` paraméterhez egy érvényes nyomógomb szimbólikus nevét rendelhetjük. Az ablak megjelenésekor ez a nyomógomb lesz fókuszban és az egérkattintáson felül az Enter lenyomására is aktiválódik. Ha ez az argumentum nincs megadva, akkor a bal szélső gomb lesz fókuszban.
+- a `default` paraméterhez egy érvényes nyomógomb szimbolikus nevét rendelhetjük. Az ablak megjelenésekor ez a nyomógomb lesz fókuszban és az egérkattintáson felül az Enter lenyomására is aktiválódik. Ha ez az argumentum nincs megadva, akkor a bal szélső gomb lesz fókuszban.
 - a `parent` argumentumnak azt az ablakobjektumot adhatjuk meg, amely felett az üzenetablak megjelenik.
 - az `icon` paraméterrel beállítható, hogy a négy üzenetfajtához tartozó ikon közül melyik jelenjen meg. Mivel a létrehozófüggvények eleve az odaillő ikont használják, ezért e paraméternek nincs gyakorlati jelentősége.
 - a `command` paraméternek egy függvényt lehet adni, ami az ablak bezárásakor lesz meghívva. E függvény a lenyomott gomb szimbolikus nevét kapja argumentumként. Korlát, hogy csak macOS platformon működik.
@@ -78,7 +78,7 @@ Az egyes üzenetfajákhoz tartozó ablakokat a `MessageBox` osztály alosztálya
 
 Az üzenetablakok felugrását hangjelzés kíséri, amit a `MessageBox` osztály `_make_sound()` metódusa állít elő.
 
-Az üzenetablakpéldányokat a `show()` metódus meghívásával lehet megjeleníteni. E metódus visszatérési értéke a választott nyomógomb szimbólikus neve.
+Az üzenetablakpéldányokat a `show()` metódus meghívásával lehet megjeleníteni. E metódus visszatérési értéke a választott nyomógomb szimbolikus neve.
 
 A `tkinter.messagebox` modulhoz hasonlóan a különböző típusú üzenetablakok létrehozására nem az előbb felsorolt osztályok közvetlen példányosítását kínáljuk, hanem erre szolgáló függvényeket. Tehát a saját egyéni modulunkban is definiáljuk a **`showinfo()`**, **`showwarning()`**, **`showerror()`**, **`askquestion()`**, **`askokcancel()`**, **`askretrycancel()`**, **`askyesno()`** és **`askyesnocancel()`** függvényeket. És ezek neveit egy listában felsorolva a modul `__all__` attribútumához rendeljük, jelezve, hogy ezek a nevek vannak nyilvános használatra szánva.
 

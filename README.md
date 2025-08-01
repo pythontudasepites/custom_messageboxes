@@ -49,7 +49,7 @@ A kérdésfeltevő ablak esetén azonban legalább két gomb jelenik meg, mert e
 
 Az ablak címét és a fő üzenet szövegét a `title` és `message` pozicionális argumentumokkal adhatjuk meg. Ezek mellett néhány kulcsszavas argumentum is használható:  
 
-- a `detail` argumentummal a főüzenetet kiegészítő, részletező vagy magyarázó szöveg adható meg, amely a fő üzenet alatt jelenik meg.
+- a `detail` argumentummal a fő üzenetet kiegészítő, részletező vagy magyarázó szöveg adható meg, amely a fő üzenet alatt jelenik meg.
 - a `default` paraméterhez egy érvényes nyomógomb szimbolikus nevét rendelhetjük. Az ablak megjelenésekor ez a nyomógomb lesz fókuszban és az egérkattintáson felül az Enter lenyomására is aktiválódik. Ha ez az argumentum nincs megadva, akkor a bal szélső gomb lesz fókuszban.
 - a `parent` argumentumnak azt az ablakobjektumot adhatjuk meg, amely felett az üzenetablak megjelenik.
 - az `icon` paraméterrel beállítható, hogy a négy üzenetfajtához tartozó ikon közül melyik jelenjen meg. Mivel a létrehozófüggvények eleve az odaillő ikont használják, ezért e paraméternek nincs gyakorlati jelentősége.
